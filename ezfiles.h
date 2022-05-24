@@ -30,3 +30,8 @@ void writeFile(char* filename, char* content){
 	fputs(content,out);
 	fclose(out);
 }
+void appendFile(char* filename, char* content){
+    FILE *out=fopen(filename,"a");
+	fputs(content,out);
+	fclose(out);
+}
